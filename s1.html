@@ -1,0 +1,109 @@
+<html>
+<head>
+  <link rel="stylesheet" href="CSSForS.css">
+  <title>
+    Letter Grade
+  </title>
+</head>
+<body>
+  <div id="nav">
+    <div id="navElements">
+      <table width=1400px>
+        <tr>
+          <td><a href="s0.html">Home</a></td>
+          <td><a href="s1.html">Grade Calculator</a></td>
+          <td><a href="s2.html">Magic 8 Ball</a></td>
+          <td><a href="s3.html">Zodiac Sign Program</a></td>
+          <td><a href="s4.html">Leap Year Calculator</a></td>
+          <td><a href="s5.html">Guessing Game</a></td>
+          <td><a href="s6.html">Math Game</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="para2">
+    <p>
+      Welcome to the letter grade calculator
+      <br>
+      Click on the button below when you are ready to start
+      <br>
+      <button onclick="functionOne()">Start</button>
+      <br>
+    </p>
+  </div>
+  <script>
+  function functionOne() {
+    var grade;
+    grade = Number(prompt("Please enter your grade:"));
+
+    if (grade > 100) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". This is an INVALID grade. Please enter a grade between 1 and 100.";
+    }
+
+    else if (grade == 100) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is level 4++ (A++). That's Perfect!";
+    }
+
+    else if (grade >= 95) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is level 4+ (A+). Congratulations!";
+    }
+
+    else if (grade >= 87) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is level 4 (A). That's very good. ";
+    }
+
+    else if (grade >= 80) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is level 4- (A-). That's pretty good";
+    }
+
+    else  if (grade >= 77) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is level 3+ (B+). That's above the standard.";
+    }
+
+    else  if (grade >= 74) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is level 3 (B). You are at the standard.";
+    }
+
+    else  if (grade >= 70) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is level 3- (B-). You are so close to the standard.";
+    }
+
+    else if (grade >= 67) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is level 2+ (C+). Work just a little more to get to the standard.";
+    }
+
+    else if (grade >= 64) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is level 2 (C). You understand the basics.";
+    }
+
+    else if (grade >= 60) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is level 2- (C-). You almost understand the basics.";
+    }
+
+    else if (grade >= 57) {
+      document.getElementById("para1").innerHTML = "Your percentage was " + grade + ". Your grade is level 1+ (D+). You don't quite understand the basics.";
+    }
+
+    else if (grade >= 54) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is level 1 (D). Keep trying.";
+    }
+
+    else if (grade >= 50) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is level 1- (D-). At least you passed.";
+    }
+
+    else if (grade < 50) {
+      document.getElementById("para2").innerHTML = "Your percentage was " + grade + ". Your grade is R. You will need to retake the assignment in order to pass. ";
+    }
+
+    else if (grade < 0){
+      document.getElementById("para2").innerHTML =  "Your percentage was " + grade + ". This is an INVALID grade. Please enter a grade between 1 and 100.";
+    }
+
+    else {
+      document.getElementById("para2").innerHTML =  "Your percentage was " + grade + ". This is an INVALID grade. Please enter a grade between 1 and 100.";
+    }
+  }
+</script>
+</body>
+</html>

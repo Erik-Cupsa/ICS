@@ -1,0 +1,97 @@
+<html>
+<head>
+  <title>
+    Guessing Game
+  </title>
+  <link rel="stylesheet" href="CSSForS.css">
+</head>
+<body>
+  <div id="nav">
+    <div id="navElements">
+      <table width=1400px>
+        <tr>
+          <td><a href="s0.html">Home</a></td>
+          <td><a href="s1.html">Grade Calculator</a></td>
+          <td><a href="s2.html">Magic 8 Ball</a></td>
+          <td><a href="s3.html">Zodiac Sign Program</a></td>
+          <td><a href="s4.html">Leap Year Calculator</a></td>
+          <td><a href="s5.html">Guessing Game</a></td>
+          <td><a href="s6.html">Math Game</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="para2">
+  <h1>
+    Guessing Game
+  </h1>
+  <p>
+    Weclome to the Guessing Game!
+    <br>
+    In this game, you will guess a number between 1 and 10.
+    <br>You have 3 tries to guess the number.
+    <br>We will also tell you whether each guess is higher or lower than the number.
+    <br>Click the button below to start.
+    <br>
+    <button onclick="functionOne()">Start</button>
+    <br>
+    <script>
+    function functionOne() {
+
+      var number, guessOne;
+      number = Math.floor(Math.random() * 10 + 1);
+      guessOne = Number(prompt("Please enter your first guess of the number between 1 and 10"));
+
+      if (guessOne == number) {
+        document.getElementById("para2").innerHTML = "Congratulations! You guessed the correct number. You won 1000 points! That's a perfect score.";
+      }
+
+      else if (guessOne > number) {
+        var guessTwo = Number(prompt("Unfortunately you guessed incorrectly. The number is lower than the number you guessed. Please guess another number between 1 and 10:"));
+      }
+
+      else if (guessOne < number) {
+        var guessTwo = Number(prompt("Unfortunately you guessed incorrectly. The number is higher than the number you guessed. Please guess another number between 1 and 10:"));
+      }
+
+      else {
+        document.getElementById("para2").innerHTML = "The value you entered was INVALID. Please restart the program and enter an integer between 1 and 10.";
+      }
+
+      if (guessTwo == number) {
+        document.getElementById("para2").innerHTML = "Congratulations! You guessed the correct number. You won 500 points! That's a really good score.";
+      }
+
+      else if (guessTwo > number) {
+        var guessThree = Number(prompt("Unfortunately you guessed incorrectly. The number is lower than the number you guessed. Please guess another number between 1 and 10:"));
+      }
+
+      else if (guessTwo < number) {
+        var guessThree = Number(prompt("Unfortunately you guessed incorrectly. The number is higher than the number you guessed. Please guess another number between 1 and 10:"));
+      }
+
+      else {
+        document.getElementById("para2").innerHTML = "The value you entered was INVALID. Please restart the program and enter an integer between 1 and 10.";
+      }
+
+      if (guessThree == number) {
+        document.getElementById("para2").innerHTML = "Congratulations! You guessed the correct number. You won 250 points! That's a good score.";
+      }
+
+      else if (guessThree > number) {
+        document.getElementById("para2").innerHTML = "Unfortunately you guessed incorrectly. The number was " + number + ". Please try again:";
+      }
+
+      else if (guessThree < number) {
+        document.getElementById("para2").innerHTML = "Unfortunately you guessed incorrectly. The number was " + number + ". Please try again:";
+      }
+
+      else {
+        document.getElementById("para2").innerHTML = "The value you entered was INVALID. Please restart the program and enter an integer between 1 and 10.";
+      }
+    }
+  </script>
+</p>
+</div>
+</body>
+</html>

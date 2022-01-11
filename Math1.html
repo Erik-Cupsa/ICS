@@ -1,0 +1,36 @@
+<html>
+<head>
+  <style>
+  body{
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  </style>
+</head>
+<body>
+  <p>Welcome to the change calculator</p>
+  <p>
+  <p>Click on the button below to calculate your change</p>
+  <p>
+    <button onclick="functionOne()">Start</button>
+<br>
+<br>
+  <script>
+  function functionOne() {
+    var moneyAmount = prompt("Please enter an amount of money less than a dollar (in cents):")
+    var quartersAmount = Math.floor(moneyAmount / 25)
+    var quarterRemainder = (moneyAmount % 25)
+    var dimesAmount = Math.floor(quarterRemainder/ 10)
+    var dimesRemainder = (quarterRemainder % 10)
+    var nickelsAmount = Math.floor(dimesRemainder / 5)
+    var nickelsRemainder = (dimesRemainder % 5)
+    var penniesAmount = Math.floor(nickelsRemainder / 1)
+
+    document.write(quartersAmount + " Quarters, " + dimesAmount + " Dimes, " + nickelsAmount + " Nickels, " + penniesAmount+ " Pennies")
+  }
+  </script>
+</body>
+</html>

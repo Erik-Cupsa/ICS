@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>
+    Leap Year Calculator
+  </title>
+  <link rel="stylesheet" href="CSSForS.css">
+</head>
+<body>
+  <div id="nav">
+    <div id="navElements">
+      <table width=1400px>
+        <tr>
+          <td><a href="s0.html">Home</a></td>
+          <td><a href="s1.html">Grade Calculator</a></td>
+          <td><a href="s2.html">Magic 8 Ball</a></td>
+          <td><a href="s3.html">Zodiac Sign Program</a></td>
+          <td><a href="s4.html">Leap Year Calculator</a></td>
+          <td><a href="s5.html">Guessing Game</a></td>
+          <td><a href="s6.html">Math Game</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="para2">
+  <h1>
+    Leap Year
+  </h1>
+  <p>
+    Weclome to the Leap Year caculator!
+    <br>
+    Click the button below to start.
+    <br>
+    <button onclick="functionOne()">Start</button>
+    <br>
+    <script>
+    function functionOne() {
+      var year = Number(prompt("Please enter a year:"));
+
+      if ((year % 100) == 0 && ((year % 400) !== 0)) {
+        document.getElementById("para2").innerHTML = "You entered the year " + year + ". This is not a leap year.";
+      }
+
+      else if ((year % 4) == 0 || ((year % 400) == 0)) {
+        document.getElementById("para2").innerHTML = "You entered the year " + year + ". This is a leap year.";
+      }
+
+      else {
+        document.getElementById("para2").innerHTML = "You entered the year " + year + ". This is either not a valid year or it is not a leap year.";
+      }
+    }
+    </script>
+  </p>
+</div>
+</body>
+</html>

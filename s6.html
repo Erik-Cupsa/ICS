@@ -1,0 +1,152 @@
+<html>
+<head>
+  <title>
+    Math game
+  </title>
+  <link rel="stylesheet" href="CSSForS.css">
+</head>
+<body>
+  <div id="nav">
+    <div id="navElements">
+      <table width=1400px>
+        <tr>
+          <td><a href="s0.html">Home</a></td>
+          <td><a href="s1.html">Grade Calculator</a></td>
+          <td><a href="s2.html">Magic 8 Ball</a></td>
+          <td><a href="s3.html">Zodiac Sign Program</a></td>
+          <td><a href="s4.html">Leap Year Calculator</a></td>
+          <td><a href="s5.html">Guessing Game</a></td>
+          <td><a href="s6.html">Math Game</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="para2">
+  <h1>
+    Math Game
+  </h1>
+  <p>
+    Weclome to the Math Game!
+    <br>
+    In this game, you will answer a minimum of three addition and/or subtraction questions.
+    <br>After each question, you will be told if you were correct and the correct response will be outputted.
+    <br>At the end, your score will be outputted.
+    <br>Click the button below to start.
+    <br>
+    <button onclick="functionOne()">Questions</button>
+    <br>
+    <script>
+    var userScore, totalScore, integerOne, integerTwo, mathSymbol, answerOne, answerTwo, answerThree;
+    userScore = 0;
+    totalScore = 0;
+
+    function functionOne() {
+      integerOne = Math.floor(Math.random() * 15 + 1);
+      integerTwo = Math.floor(Math.random() * 15 + 1);
+      mathSymbol = Math.floor(Math.random() * 2 + 1);
+
+      if(mathSymbol == 2) {
+      answerOne = Number(prompt("Your first question is " + integerOne + " + " + integerTwo));
+
+      if(answerOne == (integerOne + integerTwo)) {
+        userScore++;
+        totalScore++;
+        alert ("You inputted " + answerOne + ". That is the correct answer.");
+      }
+
+      else {
+        totalScore++;
+        alert("You inputted " + answerOne + ". That is the wrong answer. The correct answer is: " + (integerOne+integerTwo));
+      }
+    }
+
+    else {
+      answerOne = Number(prompt("Your first question is " + integerOne + " - " + integerTwo));
+
+      if (answerOne == (integerOne - integerTwo)) {
+        userScore++;
+        totalScore++;
+        alert ("You inputted " + answerOne + ". That is the correct answer.");
+      }
+
+      else {
+        totalScore++;
+        alert("You inputted " + answerOne + ". That is the wrong answer. The correct answer is: " + (integerOne-integerTwo));
+      }
+    }
+
+     integerOne = Math.floor(Math.random() * 15 + 1);
+     integerTwo = Math.floor(Math.random() * 15 + 1);
+     mathSymbol = Math.floor(Math.random() * 2 + 1);
+
+     if (mathSymbol == 2) {
+     answerTwo = Number(prompt("Your second question is " + integerOne + " + " + integerTwo));
+
+     if (answerTwo == (integerOne + integerTwo)) {
+       userScore++;
+       totalScore++;
+       alert ("You inputted " + answerTwo + ". That is the correct answer.");
+     }
+
+     else {
+       totalScore++;
+       alert("You inputted " + answerTwo + ". That is the wrong answer. The correct answer is: " + (integerOne+integerTwo));
+     }
+   }
+
+   else {
+     answerTwo = Number(prompt("Your second question is " + integerOne + " - " + integerTwo));
+
+     if (answerTwo == (integerOne - integerTwo)) {
+       userScore++;
+       totalScore++;
+       alert ("You inputted " + answerTwo + ". That is the correct answer.");
+     }
+
+     else {
+       totalScore++;
+       alert("You inputted " + answerTwo + ". That is the wrong answer. The correct answer is: " + (integerOne-integerTwo));
+     }
+   }
+
+  integerOne = Math.floor(Math.random() * 15 + 1);
+  integerTwo = Math.floor(Math.random() * 15 + 1);
+  mathSymbol = Math.floor(Math.random() * 2 + 1);
+
+  if (mathSymbol == 2) {
+  answerThree = Number(prompt("Your third question is " + integerOne + " + " + integerTwo));
+
+  if (answerThree == (integerOne + integerTwo)) {
+    userScore++;
+    totalScore++;
+    alert ("You inputted " + answerThree + ". That is the correct answer.");
+  }
+
+  else {
+    totalScore++;
+    alert("You inputted " + answerThree + ". That is the wrong answer. The correct answer is: " + (integerOne+integerTwo));
+  }
+}
+
+else {
+  answerThree = Number(prompt("Your third question is " + integerOne + " - " + integerTwo));
+
+  if (answerThree == (integerOne - integerTwo)) {
+    userScore++;
+    totalScore++;
+    alert ("You inputted " + answerThree + ". That is the correct answer.");
+    }
+
+    else {
+      totalScore++;
+      alert("You inputted " + answerThree + ". That is the wrong answer. The correct answer is: " + (integerOne+integerTwo));
+    }
+  }
+
+    alert("Your score is " + userScore + " out of " + totalScore + ". That gives " + Math.floor((userScore/totalScore)*100) + " percent. Click the button again if you would like to continue.");
+}
+</script>
+</p>
+</div>
+</body>
+</html>

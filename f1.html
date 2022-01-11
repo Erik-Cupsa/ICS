@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>
+    Area of a Circle
+  </title>
+</head>
+<body>
+  <h1 align="center">
+    Area of a Circle Calculator
+  </h1>
+  <p>
+    Welcome to the area of a circle calculator! Please click the button below to start.
+    <br>
+    <button onclick="functionOne()">Start</button>
+  </p>
+  <script>
+  function functionOne() {
+
+    function areaCalculator(radius) {
+      return Math.PI * radius * radius;
+    }
+
+    var userRadius = Number(prompt("Please enter a radius"));
+    alert("The area of your circle is " + areaCalculator(userRadius));
+  }
+    </script>
+  </body>
+  </html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>
+    Random Math Question
+  </title>
+</head>
+<body>
+  <h1 align="center">
+    Random Math Question Generator
+  </h1>
+  <p>
+    Welcome to the math question generator! Please click the button below to start.
+    <br>
+    <button onclick="functionOne()">Start</button>
+  </p>
+  <script>
+  function functionOne() {
+    var integerOne, integerTwo, mathSymbol, answer;
+
+    integerOne = Math.floor(Math.random() * 15 + 1);
+    integerTwo = Math.floor(Math.random() * 15 + 1);
+    mathSymbol = Math.floor(Math.random() * 4 + 1);
+
+    function mathQuestion() {
+      if (mathSymbol == 1) {
+        return "Your question is " + integerOne + " + " + integerTwo + ". The answer to this question is " + (integerOne + integerTwo) + ". Please click the button again to generate another question.";
+      }
+
+      else if (mathSymbol == 2) {
+        return "Your question is " + integerOne + " - " + integerTwo + ". The answer to this question is " + (integerOne - integerTwo) + ". Please click the button again to generate another question.";
+      }
+
+      else if (mathSymbol == 3) {
+        return "Your question is " + integerOne + " / " + integerTwo + ". The answer to this question is " + (integerOne / integerTwo) + ". Please click the button again to generate another question.";
+      }
+
+      else if (mathSymbol == 4) {
+        return "Your question is " + integerOne + " x " + integerTwo + ". The answer to this question is " + (integerOne * integerTwo) + ". Please click the button again to generate another question.";
+      }
+
+      else {
+        alert("There was an error. Please try again.");
+      }
+    }
+    alert(mathQuestion(mathSymbol));
+  }
+  </script>
+</body>
+</html>

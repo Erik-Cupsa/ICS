@@ -1,0 +1,48 @@
+<html>
+<head>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+    function functionOne(){
+      const vowels = ["a", "e", "i", "o", "u"];
+      var i = 0;
+      var userSentence = document.getElementById("sentence").value;
+      userSentence = userSentence.toLowerCase();
+      var arraySentence = userSentence.split(" ");
+      do {
+        var word = arraySentence[i];
+        var firstCharacter = word.substring(0,1);
+        if (firstCharacter == "a" || firstCharacter == "e" || firstCharacter == "i" || firstCharacter == "o" || firstCharacter == "u") {
+          word = arraySentence[i] + "ay";
+          convertedtext.innerHTML += " " + word;
+        }
+        else if(firstCharacter != vowels) {
+          word = word.replace(firstCharacter, "") + firstCharacter + "ay";
+          convertedtext.innerHTML += " " + word;
+        }
+        i++;
+      }while (i <= userSentence.length );
+  }
+  </script>
+  <h1 align="center">
+    Pig Latin
+  </h1>
+  <h2 align="center"> By Erik Cupsa
+  </h2>
+  <p> This program will turn any sentence you input into pig latin.
+    <br>
+    In this language, words that begin with a vowel have 'ay' added at the end. Words that begin with a consonant have the consonant moved to the end and 'ay' is added at the end.
+    <br>
+    When you are ready to start, input your sentence in the textbox below and click the start button.
+  </p>
+  <br>
+  <input type="text" id="sentence" placeholder="Input your sentence here"></input>
+  <br>
+  <button onclick="functionOne()">Startay</button>
+  <br>
+  <hr>
+  <p id="convertedtext">Your sentence in pig latin is: </p>
+</body>
+</html>

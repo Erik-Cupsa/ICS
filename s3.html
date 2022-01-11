@@ -1,0 +1,143 @@
+<html>
+<head>
+  <title>
+    Zodiac Sign
+  </title>
+  <link rel="stylesheet" href="CSSForS.css">
+</head>
+<body>
+  <div id="nav">
+    <div id="navElements">
+      <table width=1400px>
+        <tr>
+          <td><a href="s0.html">Home</a></td>
+          <td><a href="s1.html">Grade Calculator</a></td>
+          <td><a href="s2.html">Magic 8 Ball</a></td>
+          <td><a href="s3.html">Zodiac Sign Program</a></td>
+          <td><a href="s4.html">Leap Year Calculator</a></td>
+          <td><a href="s5.html">Guessing Game</a></td>
+          <td><a href="s6.html">Math Game</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="para3">
+  <h1>
+    Zodiac Sign
+  </h1>
+  <p>
+    Weclome to the Zodiac Sign program!
+    <br>
+    Click the button below to start.
+    <br>
+    <button onclick="functionOne()">Start</button>
+    <br>
+    <script>
+    function functionOne() {
+      var month = prompt("Please enter your birth month (write as full word):").toLowerCase();
+      var day = Number(prompt("Please enter your birth day"));
+
+      if((month == "january") && (day <= 19)) {
+        document.getElementById("para3").innerHTML = "You are a CAPRICORN<br><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/capricorn-47-894965.png'>";
+      }
+
+      else if ((month == "january") && (day >= 20 && (day <= 31))) {
+        document.getElementById("para3").innerHTML = "You are an AQUARIUS<br><img src='http://www.spstencils.com/wp-content/uploads/2014/08/zodiac-aquarius.gif'>";
+      }
+
+      else if ((month == "february") && (day <= 19)) {
+        document.getElementById("para3").innerHTML = "You are an AQUARIUS <br><img src='http://www.spstencils.com/wp-content/uploads/2014/08/zodiac-aquarius.gif'>";
+      }
+
+      else if ((month == "february") && (day >= 20 && (day <= 29))) {
+        document.getElementById("para3").innerHTML = "You are a PISCES <br><img src='https://i.etsystatic.com/14214188/r/il/fe2261/1282576867/il_570xN.1282576867_bq6u.jpg'>";
+      }
+
+      else if ((month == "march") && (day <= 20)) {
+        document.getElementById("para3").innerHTML = "You are a PISCES <br><img src='https://i.etsystatic.com/14214188/r/il/fe2261/1282576867/il_570xN.1282576867_bq6u.jpg'>";
+      }
+
+      else if ((month == "march") && (day >= 21 && (day <= 31))) {
+        document.getElementById("para3").innerHTML = "You are an ARIES <br><img src='https://cdn3.vectorstock.com/i/1000x1000/85/62/aries-symbol-icon-black-color-flat-style-simple-vector-21158562.jpg'>";
+      }
+
+      else if ((month == "april") && (day <= 19)) {
+        document.getElementById("para3").innerHTML = "You are an ARIES <br><img src='https://cdn3.vectorstock.com/i/1000x1000/85/62/aries-symbol-icon-black-color-flat-style-simple-vector-21158562.jpg'>";
+      }
+
+      else if ((month == "april") && (day >= 20 && (day <= 30))) {
+        document.getElementById("para3").innerHTML = "You are a TAURUS <br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRZxoTyeWScamuNI28bC-Rnfgbo56DbFD0qjb8unnys7I4hWI'>";
+      }
+
+      else if ((month == "may") && (day <= 20)) {
+        document.getElementById("para3").innerHTML = "You are a TAURUS <br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRZxoTyeWScamuNI28bC-Rnfgbo56DbFD0qjb8unnys7I4hWI'>";
+      }
+
+      else if ((month == "may") && (day >= 22 && (day <= 31))) {
+        document.getElementById("para3").innerHTML = "You are a GEMINI <br><img src='https://www.ziprecruiter.com/blog/zrs-0001/blog/wp-content/uploads/2017/08/gemini-1.png'>";
+      }
+
+      else if ((month == "june") && (day <= 21)) {
+        document.getElementById("para3").innerHTML = "You are a GEMINI <br><img src='https://www.ziprecruiter.com/blog/zrs-0001/blog/wp-content/uploads/2017/08/gemini-1.png'>";
+      }
+
+      else if ((month == "june") && (day >= 22 && (day <= 30))) {
+        document.getElementById("para3").innerHTML = "You are a CANCER <br><img src='https://dejpknyizje2n.cloudfront.net/svgcustom/clipart/preview/astrology-cancer-zodiac-symbol-sticker-3349-20193-300x300.png'>";
+      }
+
+      else if ((month == "july") && (day <= 22)) {
+        document.getElementById("para3").innerHTML = "You are a CANCER <br><img src='https://dejpknyizje2n.cloudfront.net/svgcustom/clipart/preview/astrology-cancer-zodiac-symbol-sticker-3349-20193-300x300.png'>";
+      }
+
+      else if ((month == "july") && (day >= 23 && (day <= 31))) {
+        document.getElementById("para3").innerHTML = "You are a LEO <br><img src='https://i.pinimg.com/originals/c1/c2/43/c1c243e0c05b608b40f9c555ad05be0e.jpg'>";
+      }
+      else if ((month == "august") && (day <= 22)) {
+        document.getElementById("para3").innerHTML = "You are a LEO <br><img src='https://i.pinimg.com/originals/c1/c2/43/c1c243e0c05b608b40f9c555ad05be0e.jpg'>";
+      }
+
+      else if ((month == "august") && (day >= 23 && (day <= 31))) {
+        document.getElementById("para3").innerHTML = "You are a VIRGO <br><img src='https://i.etsystatic.com/14214188/r/il/edb61e/1235605056/il_570xN.1235605056_1pbq.jpg'>";
+      }
+
+      else if ((month == "september") && (day <= 23)) {
+        document.getElementById("para3").innerHTML = "You are a VIRGO <br><img src='https://i.etsystatic.com/14214188/r/il/edb61e/1235605056/il_570xN.1235605056_1pbq.jpg'>";
+      }
+
+      else if ((month == "september") && (day >= 24 && (day <= 30))) {
+        document.getElementById("para3").innerHTML = "You are a LIBRA <br><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Libra.svg/574px-Libra.svg.png'>";
+      }
+
+      else if ((month == "october") && (day <= 24)) {
+        document.getElementById("para3").innerHTML = "You are a LIBRA <br><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Libra.svg/574px-Libra.svg.png'>";
+      }
+
+      else if ((month == "october") && (day >= 25 && (day <= 31))) {
+        document.getElementById("para3").innerHTML = "You are a SCORPIO <br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4ae-DNSgHh08rKVIXPGsXFMIhktRlZ_6WT7vyBBO_7BpESoN'>";
+      }
+
+      else if ((month == "november") && (day <= 21)) {
+        document.getElementById("para3").innerHTML = "You are a SCORPIO <br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4ae-DNSgHh08rKVIXPGsXFMIhktRlZ_6WT7vyBBO_7BpESoN'>";
+      }
+
+      else if ((month == "november") && (day >= 22 && (day <= 30))) {
+        document.getElementById("para3").innerHTML = "You are a SAGITTARIUS <br><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Sagittarius.svg/600px-Sagittarius.svg.png'>";
+      }
+
+      else if ((month == "december") && (day <= 21)) {
+        document.getElementById("para3").innerHTML = "You are a SAGITTARIUS <br><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Sagittarius.svg/600px-Sagittarius.svg.png'>";
+      }
+
+      else if ((month == "december") && (day >= 22 && (day <=31))) {
+        document.getElementById("para3").innerHTML = "You are a CAPRICORN <br><img src='https://cdn.iconscout.com/icon/premium/png-256-thumb/capricorn-47-894965.png'>";
+      }
+
+      else {
+        document.getElementById("para3").innerHTML = "INVALID";
+      }
+    }
+    </script>
+  </p>
+</div>
+</body>
+</html>

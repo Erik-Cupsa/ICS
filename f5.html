@@ -1,0 +1,76 @@
+<html>
+<head>
+  <title>
+    Forms Icebreaker
+  </title>
+</head>
+<body>
+  <h1 align="center">How to Start a Conversation for Millenials</h1>
+  <h2 align="center">Conversation Generator</h2>
+  <script>
+  function paragraphGenerator() {
+    var firstName = document.getElementById("myFirstName").value;
+    var lastName = document.getElementById("myLastName").value;
+    var age = document.getElementById("myAge").value;
+    var birthday = document.getElementById("myBirthday").value;
+    var grade = document.getElementById("myGrade").value;
+    var gender = document.getElementById("myGender").value;
+    var birthPlace = document.getElementById("myBirthPlace").value;
+    var school = document.getElementById("mySchool").value;
+    var favouriteSport = document.getElementById("myFavouriteSport").value;
+    var favouriteHobby = document.getElementById("myFavouriteHobby").value;
+    document.getElementById("conversationParagraph").innerHTML = "Hello! My name is " + firstName + " " + lastName + ". I am " + age + " years old, my birthday is on " + birthday + " and I was born in " + birthPlace + ". I am a " + gender + " in grade " + grade + " at the school " + school + ". My favourite sport is " + favouriteSport + " and my favourite hobby is " + favouriteHobby + ".";
+  }
+  </script>
+  <form>
+    First Name <br>
+    <input type="text" id = "myFirstName" value=Erik>
+    <br>
+    Last Name <br>
+    <input type="text" id = "myLastName" value=Cupsa>
+    <br>
+    Age <br>
+    <input type="text" id = "myAge" value=15>
+    <br>
+    Birthday <br>
+    <input type="date" id="myBirthday" value=2003-12-16>
+    <br>
+    Grade <br>
+    <select name="grade" id="myGrade">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+    <br>
+    Gender <br>
+    <select name="gender" id="myGender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <br>
+    Birth Place <br>
+    <input type="text" id="myBirthPlace" value="Ottawa">
+    <br>
+    School <br>
+    <input type="text" id="mySchool" value="Colonel By"><br>
+    Favourite Sport <br>
+    <input type="text" id="myFavouriteSport" value="Soccer"><br>
+    Favourite Hobby <br>
+    <input type="text" id="myFavouriteHobby" value="Running">
+    <br><br>
+    <button type="button" onclick="paragraphGenerator()">Generate Paragraph </button>
+  </form>
+  <br>
+  Here is your paragraph:
+  <p id="conversationParagraph"></p>
+</body>
+</html>

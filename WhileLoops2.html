@@ -1,0 +1,39 @@
+<html>
+<head>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+    function functionOne(){
+      var i =0;
+      var counter=0;
+      var userSentence = document.getElementById("sentence").value;
+      userSentence = userSentence.toLowerCase();
+      do {
+        if ((userSentence.charCodeAt(i) >= 97 && userSentence.charCodeAt(i) <= 122)) {
+          counter ++;
+        }
+        i++;
+      }while (i <= userSentence.length );
+      nletters.innerHTML = "There are " + counter + " letters in your sentence.";
+  }
+  </script>
+  <h1 align="center">
+    Letters
+  </h1>
+  <h2 align="center"> By Erik Cupsa
+  </h2>
+  <p> This program will count the number of letters in any sentence you input.
+    <br>
+    When you are ready to start, input your sentence in the textbox below and click the start button.
+  </p>
+  <br>
+  <input type="text" id="sentence" placeholder="Input your sentence here"></input>
+  <br>
+  <button onclick="functionOne()">Start</button>
+  <br>
+  <hr>
+  <p id="nletters"></p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+    function functionOne(){
+      var letterOne = String.fromCharCode(Math.round((Math.random() * 25) + 97));
+      var letterTwo = String.fromCharCode(Math.round((Math.random() * 25) + 97));
+      var letterThree = String.fromCharCode(Math.round((Math.random() * 25) + 97));
+      var password = letterOne + letterTwo + letterThree;
+      console.log("Password is "+ password)
+    var counter = 1;
+    do
+    {
+      var userGuess = prompt("Please enter your guess here: ");
+      counter ++;
+    }
+    while(userGuess != password && counter <=5);
+
+    if(counter > 5){
+      guess.innerHTML = "Unfortunately you ran out of guess and did not guess the password. Please try again.";
+    }
+
+    else {
+      guess.innerHTML = "Congratulations! You have guessed the password correctly.";
+    }
+  }
+  </script>
+  <h1 align="center">
+    Password Checker
+  </h1>
+  <h2 align="center"> By Erik Cupsa
+  </h2>
+  <p> The password generated has 3 characters.
+    <br>
+    Once you start, you will be given 5 guesses at the password.
+    <br>
+    When you are ready to start guessing, click the button below.
+  </p>
+  <br>
+  <button onclick="functionOne()">Start</button>
+  <hr>
+  <br>
+  <p id="guess"></p>
+</body>
+</html>

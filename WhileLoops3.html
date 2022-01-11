@@ -1,0 +1,53 @@
+<html>
+<head>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+    function functionOne(){
+      const letterA = ["a"];
+      const letterE = ["e"];
+      const letterI = ["i"];
+      const letterO = ["o"];
+      var i =0;
+      var userSentence = document.getElementById("sentence").value;
+      userSentence = userSentence.toLowerCase();
+      do {
+        if ((userSentence.charCodeAt(i) == 97)){
+          userSentence = userSentence.replace(letterA, 4);
+        }
+        else if ((userSentence.charCodeAt(i) == 101)){
+          userSentence = userSentence.replace(letterE, 3);
+        }
+        else if ((userSentence.charCodeAt(i) == 105)){
+          userSentence = userSentence.replace(letterI, 1);
+        }
+        else if ((userSentence.charCodeAt(i) == 111)){
+          userSentence = userSentence.replace(letterO, 0);
+        }
+        i++;
+      }while (i <= userSentence.length );
+      convertedtext.innerHTML = "Your new sentence is " + userSentence;
+  }
+  </script>
+  <h1 align="center">
+    Hacker Speak
+  </h1>
+  <h2 align="center"> By Erik Cupsa
+  </h2>
+  <p> This program will turn any sentence you input into h4ck3r sp34k.
+    <br>
+    In this language, 4 looks like an A, 3 looks like an E, 1 looks lke an I and 0 looks like an O.
+    <br>
+    When you are ready to start, input your sentence in the textbox below and click the start button.
+  </p>
+  <br>
+  <input type="text" id="sentence" placeholder="Input your sentence here"></input>
+  <br>
+  <button onclick="functionOne()">St4rt</button>
+  <br>
+  <hr>
+  <p id="convertedtext"></p>
+</body>
+</html>

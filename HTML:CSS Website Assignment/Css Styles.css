@@ -1,0 +1,57 @@
+/* The following will create the side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    opacity: 0.9;
+}
+.navElements {
+  font-size: 25px;
+  line-height: 6;
+  text-align: center;
+}
+.sideNav a {
+  text-decoration: none;
+  color:white;
+}
+.sideNav a:hover {
+  color:grey;
+}
+/* The following change the style of the links */
+a {
+  color:white;
+  text-decoration: none;
+}
+a:hover {
+  color:grey;
+}
+/* The following are different types of text decorations, whether it be for the header, for titles, or for paragraphs */
+#para1 {
+  color:white;
+  background-color:black;
+  text-align:center;
+  border:solid black 3px;
+  margin-left:500px;
+  margin-right:400px;
+  opacity: 0.8;
+}
+#para2 {
+  color:white;
+  font-size:30px;
+  width:75%;
+  margin-left: 300px;
+  line-height: 50px;
+}
+#para3 {
+  color:white;
+  width:75%;
+  margin-left: 300px;
+  font-size: 20px;
+  line-height:30px;
+}

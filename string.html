@@ -1,0 +1,113 @@
+<html>
+<head>
+</head>
+<body>
+  <script>
+  function functionOne(){
+    const vowels = ["a", "e", "i", "o", "u"];
+    var word = document.getElementById("winputone").value;
+    var part = word.substring(1);
+    var firstCharacter = word.substring(0,1);
+    if (vowels.includes(firstCharacter)) {
+      var newword = part + firstCharacter;
+      opone.innerHTML = newword;
+    }
+    else {
+      var newword = word + "ly";
+      opone.innerHTML = newword;
+    }
+  }
+  function functionTwo() {
+    var userWord = document.getElementById("winputtwo").value;
+    var userString = document.getElementById("sinputone").value;
+
+    optwo.innerHTML = "The input has " + userWord.length + " characters, and the letter " + userString + " occurs first at position " + (userWord.indexOf(userString) + 1) + " in your input and last at position " + (userWord.lastIndexOf(userString) + 1) + ".";
+  }
+  function functionThree() {
+    var userWord = document.getElementById("winputthree").value;
+    var userString = document.getElementById("sinputtwo").value;
+    const letter = String.fromCharCode(Math.round((Math.random() * 26) + 97));
+
+    if (userWord.includes(userString)) {
+      var newword = userWord.replace(userString, letter);
+      opthree.innerHTML = "Your word " + userWord + " contains the letter " + userString + ". The random letter picked was " + letter + ". Your new word is: " + newword;
+    }
+    else {
+      opthree.innerHTML = "Your letter is not in the word. Please try again.";
+    }
+  }
+  function functionFour() {
+    var userStringOne = document.getElementById("winputfour").value;
+    userStringOne = userStringOne.toLowerCase();
+    var userStringTwo = document.getElementById("winputfive").value;
+    userStringTwo = userStringTwo.toLowerCase();
+    var userStringThree = document.getElementById("winputsix").value;
+    userStringThree = userStringThree.toLowerCase();
+
+    var stringOrder = [userStringOne, userStringTwo, userStringThree];
+    stringOrder.sort();
+
+    opfour.innerHTML = "Your words in alphabetical order is: " + stringOrder;
+  }
+  </script>
+  <h1 align="center">
+    Script Exercises
+    <br>
+    By Erik Cupsa
+  </h1>
+  <br>
+  <h2>
+    Exercise 1
+  </h2>
+  Enter Word:<input type="text" id="winputone"></input>
+  <br>
+  Output:
+  <br>
+  <p id="opone"> </p>
+  <br>
+  <button onclick="functionOne()">Submit</button>
+  <br>
+  <hr>
+  <h2>
+    Exercise 2
+  </h2>
+  <br>
+  Enter Word: <input type="text" id="winputtwo"></input>
+  Enter String: <input type="text" id="sinputone"></input>
+  <br>
+  Output:
+  <br>
+  <p id="optwo"> </p>
+  <br>
+  <button onclick="functionTwo()">Submit</button>
+  <br>
+  <hr>
+  <h2>
+    Exercise 3
+  </h2>
+  <br>
+  Enter Word: <input type="text" id="winputthree"></input>
+  Enter String: <input type="text" id="sinputtwo"></input>
+  <br>
+  Output:
+  <br>
+  <p id="opthree"> </p>
+  <br>
+  <button onclick="functionThree()">Submit</button>
+  <br>
+  <hr>
+  <h2>
+    Exercise 4
+  </h2>
+  <br>
+  Enter Word: <input type="text" id="winputfour"></input>
+  Enter Word: <input type="text" id="winputfive"></input>
+  Enter Word: <input type="text" id="winputsix"></input>
+  <br>
+  Output:
+  <br>
+  <p id="opfour"> </p>
+  <br>
+  <button onclick="functionFour()">Submit</button>
+</body>
+</html>

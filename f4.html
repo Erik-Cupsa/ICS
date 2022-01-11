@@ -1,0 +1,93 @@
+<html>
+<head>
+  <title>
+    Rectangle
+  </title>
+</head>
+<body>
+  <script>
+  function recArea() {
+    var l = document.getElementById("myLength").value;
+    var w = document.getElementById("myWidth").value;
+    document.getElementById("areaParagraph").innerHTML = l*w;
+  }
+
+  function recPerimeter() {
+    var l = document.getElementById("myPLength").value;
+    var w = document.getElementById("myPWidth").value;
+    document.getElementById("perimeterParagraph").innerHTML = (2*l)+(2*w);
+  }
+
+  function recDiagonal() {
+    var l = document.getElementById("myDLength").value;
+    var w = document.getElementById("myDWidth").value;
+    document.getElementById("diagonalParagraph").innerHTML = ((l^2)+(w^2))^(1/2);
+  }
+
+  function recSemiperimeter() {
+    var l = document.getElementById("mySLength").value;
+    var w = document.getElementById("mySWidth").value;
+    document.getElementById("semiperimeterParagraph").innerHTML = (1*l)+(1*w);
+  }
+  </script>
+  <form>
+    Calculate the Area of a Rectangle: <br><br>
+    Length<br>
+    <input type="text" id = "myLength" value=20>
+    <br>
+    Width<br>
+    <input type="text" id = "myWidth" value=4>
+    <br><br>
+    <button type="button" onclick="recArea()">Calculate Area </button>
+    <br>
+  </form>
+  <br>
+  The area is:
+  <p id="areaParagraph"></p>
+  <form>
+    <br>
+    Calculate the Perimeter of a Rectangle: <br><br>
+    Length<br>
+    <input type="text" id = "myPLength" value=20>
+    <br>
+    Width<br>
+    <input type="text" id = "myPWidth" value=4>
+    <br><br>
+    <button type="button" onclick="recPerimeter()">Calculate Perimeter </button>
+    <br>
+  </form>
+  <br>
+  The perimeter is:
+  <p id="perimeterParagraph"></p>
+  <form>
+    <br>
+    Calculate the Diagonal of a Rectangle: <br><br>
+    Length<br>
+    <input type="text" id = "myDLength" value=20>
+    <br>
+    Width<br>
+    <input type="text" id = "myDWidth" value=4>
+    <br><br>
+    <button type="button" onclick="recDiagonal()">Calculate Diagonal </button>
+    <br>
+  </form>
+  <br>
+  The diagonal is:
+  <p id="diagonalParagraph"></p>
+  <form>
+    <br>
+    Calculate the Semiperimeter of a Rectangle: <br><br>
+    Length<br>
+    <input type="text" id = "mySLength" value=20>
+    <br>
+    Width<br>
+    <input type="text" id = "mySWidth" value=4>
+    <br><br>
+    <button type="button" onclick="recSemiperimeter()">Calculate Semiperimeter </button>
+    <br>
+  </form>
+  <br>
+  The semiperimeter is:
+  <p id="semiperimeterParagraph"></p>
+</body>
+</html>

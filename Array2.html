@@ -1,0 +1,127 @@
+<html>
+<head>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+  function functionOne() {
+    var characteristics = [
+      "laugh",
+      "eyes",
+      "laugh",
+      "intelligence",
+      "generosity",
+      "integrity",
+      "loyalty",
+      "devotion",
+      "love",
+      "kindness",
+      "sincerity",
+      "self-control",
+      "peacefulness",
+      "faithfulness",
+      "patience",
+      "determination",
+      "persistence",
+      "fairness",
+      "cooperation",
+      "tolerance",
+      "optimism",
+      "spirituality"
+    ]
+    var adjectives = [
+      "adaptable ",
+      "adventurous ",
+      "affectionate",
+      "amusing",
+      "brave ",
+      "bright",
+      "calm ",
+      "careful",
+      "charming", 
+      "compassionate", 
+      "considerate ", 
+      "courageous", 
+      "creative ", 
+      "determined ", 
+      "emotional ", 
+      "energetic ", 
+      "enthusiastic ", 
+      "faithful ", 
+      "fearless", 
+      "forceful ", 
+      "friendly ", 
+      "funny", 
+      "generous ", 
+      "gentle ", 
+      "good ", 
+      "helpful ", 
+      "honest ", 
+      "humorous", 
+      "imaginative ", 
+      "kind", 
+      "loving", 
+      "loyal", 
+      "modest", 
+      "nice", 
+      "optimistic", 
+      "patient ", 
+      "polite ", 
+      "powerful", 
+      "reliable ", 
+      "romantic", 
+      "sensitive ", 
+      "sincere",
+      "thoughtful ",
+      "understanding", 
+      "willing"
+    ]
+    var nouns = [
+      "hero", 
+      "genius", 
+      "einstein", 
+      "unicorn", 
+      "mom", 
+      "dad", 
+      "sister", 
+      "brother", 
+      "uncle", 
+      "aunt", 
+      "cousin", 
+      "lady", 
+      "woman", 
+      "girl", 
+      "boy", 
+      "man", 
+      "baby", 
+      "teacher", 
+      "lawyer", 
+      "bus driver", 
+      "coach", 
+      "grandma", 
+      "grandpa", 
+      "doctor", 
+      "dancer", 
+    ]
+    com.innerHTML = "You have the " + characteristics[Math.floor(Math.random()*22)] + " of a " + adjectives[Math.floor(Math.random()*45)] + " " + nouns[Math.floor(Math.random()*25)]
+  }
+  </script>
+  <h1 align="center">
+    Random Compliment Generator
+  </h1>
+  <h2 align="center"> By Erik Cupsa
+  </h2>
+  <p> This program will generate a random characteristic, adjective and noun.
+    <br>
+    Then, the program will create a compliment and output it.
+    <br>
+    Once you are ready to start, click the button below.
+  </p>
+  <br>
+  <button onclick="functionOne()">Start</button>
+  <br>
+  <hr>
+  <p id="com">Your compliment will appear here</p>
+</body>
+</html>

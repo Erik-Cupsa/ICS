@@ -1,0 +1,162 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css styles.css">
+  <!-- The above is a link to the css style sheet-->
+<style>
+/* The following changes the background of the website page */
+body {
+  background-image: url("backgrounds/page4.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
+  <!-- All sidenav and nav style tags are for the creation of a side navigation menu with access to all other pages -->
+  <div class="sidenav">
+    <div class="navElements">
+    <a href="Page1-Home.html">Home</a> <br>
+    <a href="Page2-Projects.html">Projects</a> <br>
+    <a href="Page3-Resume.html">Resume</a> <br>
+    <a href="Page4-OwnDesign.html">About Me</a> <br>
+  </div>
+</div>
+<div id="para1">
+<h1>
+HTML And CSS Projects
+</h1>
+<h2>
+  About Me<br>
+  By Erik Cupsa
+</h2>
+</p>
+</div>
+<!-- The dividers used in this part of the code are used as a distinction between the side navigation and the header at the top of the page. They both use dividers to clean up the code -->
+<div id="para3">
+  <p align="center" id="para2">
+    About Me
+    <!-- Title of new topic, followed by information-->
+    </p>
+    <p>
+      Hi! My name is Erik Cupsa, I am 14 years old, and I am a student at Colonel By High School. I was born in Ottawa, Ontario on December 16 2003 yet I have a Romanian heritage. I am 5 foot 10, and have brown hair and eyes. I love to play competitive soccer, go on long runs, and play video games.
+    </p>
+    <p align="center" id="para2"> Courses (Higlighted = Favourites)</p>
+    <!-- Title of new topic, followed by information-->
+    <p>
+      <table id="para3">
+        <!-- Table is used to seperate days with courses/teachers. The favourite courses are higlighted by changing bgcolor to blue-->
+        <tr>
+          <td> Day 1 and 3</td>
+          <td> Day 2 and 4</td>
+        </tr>
+        <tr>
+          <td bgcolor="blue"> ICS with Mr. Hudson </td>
+          <td> Fitness with Mr. Chapman </td>
+        </tr>
+        <tr>
+          <td> History with Mr. Kitay </td>
+          <td bgcolor="blue"> English with Mr. Wasylyk </td>
+        </tr>
+        <tr>
+          <td> Science with Mme. Savage </td>
+          <td> Business with Mr. Milne </td>
+        </tr>
+        <tr>
+          <td> Frecnh with Mme. Kitchen </td>
+          <td bgcolor="blue"> Mathematics with Mrs. Boerner </td>
+        </tr>
+      </table>
+      <p align="center" id="para2"> Interests </p>
+      <!-- Title of new topic, followed by information-->
+      <p>
+        <!-- Lists are used to seperate each interest. There are lists inside of lists in order to elaborate on certain points-->
+        <ol type="A">
+          <li>Sports
+            <ul>
+              <li>Soccer </li>
+              <li>Tennis </li>
+              <li>Swimming </li>
+            </ul>
+          </li>
+          <li>Running
+            <ol type="a">
+              <li>Long Distance
+            </li>
+          </ol>
+          </li>
+          <li>Video-games
+            <ol type="i">
+              <li>Mostly games on the XBOX console that are multiplayer
+              </li>
+            </ol>
+            </li>
+          <li>Travelling
+            <ol type="i">
+              <li>I love experiencing new cultures and new environments</li>
+            </ol>
+          </li>
+          <li>Technology
+            <ol type="i">
+              <li>Interested in all new forms of Technology</li>
+              <li>Including Computers, Phones, etc.</li>
+            </ol>
+          </li>
+          <li>Math
+            <ol type="a">
+              <li>Problem Solving</li>
+            </ol>
+          </li>
+        </ol>
+      </p>
+      <p align ="center" id="para2">Favourite Links </p>
+      <!-- Title of new topic, followed by information-->
+      <!-- Lists are used to seperate the different "favourite" titles. Links are placed inside the lists that take the viewer to the webiste-->
+      <p>Favourite Games:
+        <ul>
+          <li><a href="https://www.easports.com/fifa"> Fifa 19 </a></li>
+          <li><a href="https://www.epicgames.com/fortnite/buy-now"> Fortnite </a></li>
+          <li><a href="https://www.rockstargames.com/reddeadredemption2/"> Red Dead Redemption 2 </a></li>
+        </ul>
+      </p>
+      <p>Most Used:
+        <ul>
+          <li><a href="https://www.google.ca/drive/">Google Drive</a></li>
+          <li><a href="https://www.managebac.com/">Managebac </a></li>
+        </ul>
+      </p>
+      <p align="center" id="para2"> About You </p>
+      <!-- Title of new topic, followed by survey -->
+      <p>Please take the time to fill out the following survey:
+        <!-- The following is a survey for visitor's of the website. It collects general information on the visitor and the website-->
+        <table bgcolor="black" style="color:white">
+          <tr>
+            <td width="600"> First Name: </td>
+            <td><input type="text" name="firstname" size="30"> </td>
+          </tr>
+          <tr>
+            <td width="600"> Last Name: </td>
+            <td><input type="text" name="lastname" size="30"> </td>
+          </tr>
+          <tr>
+            <td width="600"> Country: </td>
+            <td><input type="text" name="country" size="30"> </td>
+          </tr>
+          <tr>
+            <td width="600"> Good Website: </td>
+            <td width="235"> <input type="radio" name="goodwebsite" value="yes"> Yes </td>
+            <td> <input type="radio" name="goodwebsite" value="no"> No </td>
+          </tr>
+          <tr>
+            <td> Favourite Pages (check all that apply):</td>
+            <td> <input width="50" type="checkbox" name="favouritepages" value="home"> Home </td>
+            <td> <input type="checkbox" name="favouritepages" value="projects"> Projects </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td> <input type="checkbox" name="favouritepages" value="resume"> Resume </td>
+            <td> <input type="checkbox" name="favouritepages" value="aboutme"> About Me </td>
+          </tr>
+        </table>
+      </p>
+</body>
+</html>

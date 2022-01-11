@@ -1,0 +1,65 @@
+<html>
+<head>
+  <style>
+  body{
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  </style>
+</head>
+<body>
+  <p>Welcome to the free randomly generated math quiz!</p>
+  <p>Click the button to get the answers for your quiz</p>
+  <p>
+    <button onclick="functionOne()">Answers</button>
+    <br>
+    <br>
+  <script>
+    var numberOne = Math.random() * 100;
+    var numberOne = Math.floor(numberOne);
+    var numberTwo = Math.random() * 100;
+    var numberTwo = Math.floor(numberTwo);
+    var numberThree = Math.random() * 100;
+    var numberThree = Math.floor(numberThree);
+    var numberFour = Math.random() * 100;
+    var numberFour = Math.floor(numberFour);
+    var numberFive = Math.random() * 100;
+    var numberFive = Math.floor(numberFive);
+    var numberSix = Math.random() * 100;
+    var numberSix = Math.floor(numberSix);
+    var numberSeven = Math.random() * 100;
+    var numberSeven = Math.floor(numberSeven);
+    var numberEight = Math.random() * 100;
+    var numberEight = Math.floor(numberEight);
+    var answerOne = numberOne + numberTwo
+    var answerTwo = numberThree - numberFour
+    var answerThree = numberFive * numberSix
+    var answerFour = numberSeven / numberEight
+
+    document.write("The following are your generated questions:")
+    document.write("<br>")
+    document.write(numberOne + " + " + numberTwo)
+    document.write("<br>")
+    document.write(numberThree + " - " + numberFour)
+    document.write("<br>")
+    document.write(numberFive + " x " + numberSix)
+    document.write("<br>")
+    document.write(numberSeven + " / " + numberEight)
+    document.write("<br>")
+      function functionOne() {
+        document.write("The following are the answers to your generated questions")
+        document.write("<br>")
+        document.write(answerOne)
+        document.write("<br>")
+        document.write(answerTwo)
+        document.write("<br>")
+        document.write(answerThree)
+        document.write("<br>")
+        document.write(answerFour)
+      }
+  </script>
+</body>
+</html>
